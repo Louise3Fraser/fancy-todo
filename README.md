@@ -1,2 +1,3 @@
 # fancy-todo
-## By Louise Fraser and Nia Yick
+### By Louise Fraser and Nia Yick
+
