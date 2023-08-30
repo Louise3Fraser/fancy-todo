@@ -7,4 +7,4 @@ This app utilizes...
 + mySQL
 + MUI Library
 
-![Alt text]("https://github.com/Louise3Fraser/fancy-todo/assets/105082271/e3e280fa-e321-4df1-9acf-ceb0b5a36f9e")
+<img width="1024" alt="Screenshot 2023-08-30 at 4 23 12 PM" src="https://github.com/Louise3Fraser/fancy-todo/assets/105082271/a6a3c0bd-a583-4d9d-8c47-c723ae6f282a">
