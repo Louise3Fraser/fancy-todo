@@ -15,9 +15,10 @@ export async function addItem(todo) {
       title: todo,
       complete: false,
     });
-    console.log(response);
+    return true;
   } catch (error) {
     console.log(error);
+    return false;
   }
 }
 
@@ -26,8 +27,9 @@ export async function deleteItem(id) {
     const response = await axios.delete(`http://localhost:8800/todo/${id}`, {
       id: id,
     });
-    console.log(response);
+    return true;
   } catch (error) {
     console.log(error);
+    return false;
   }
 }

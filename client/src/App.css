@@ -1,27 +1,23 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 body {
   padding: 50px;
   color: #f7f7f7;
   min-height: 100vh;
-  background: #252525;
-  text-rendering: optimizeSpeed;
+  background: #f5f5f5;
   font-family: "Roboto", sans-serif;
 }
 
 .App {
-  padding: 4vh;
-  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* .app-containter {
   margin: 0 auto;
-  text-align: center;
-  background: #333;
+  background: #f5f5f5;
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 5px;
-}
+} */
 
 h1 {
   font-weight: 300;
@@ -31,14 +27,6 @@ h1 {
   text-transform: uppercase;
 }
 
-.input-wrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-
 .todos-wrapper {
   margin-bottom: 2.5rem;
 }
@@ -46,39 +34,19 @@ h1 {
 .todo {
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .todo-list {
   display: flex;
   flex-direction: column;
   gap: 6px;
+  width: 100%;
 }
 
-input {
-  max-width: 450px;
-  padding: 0.8em;
-}
-
-input:focus {
-  outline: none;
-}
-
-button {
-  max-width: 120px;
-  padding: 0.8em;
-  cursor: pointer;
-  font-weight: 400;
-  letter-spacing: 0.1rem;
-}
-
-input,
-button {
-  font-size: 1em;
-  appearance: none;
-  color: currentcolor;
-  background: transparent;
-  border: 1px solid #828691;
+.input-wrapper {
+  display: flex;
+  flex-direction: row;
 }
 
 .add-button {
@@ -95,23 +63,29 @@ ul {
   margin-bottom: 0px;
 }
 
-li {
+.list {
   width: 100%;
   padding: 0.85em;
-  background: #494847;
-  letter-spacing: 0.02rem;
+  background: #f5f5f5;
   transition: all 0.3s ease-out;
   border-left: 5px solid #cf972e;
   display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  color: #3b3b3b;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 5px;
+
 }
 
-li:last-child {
-  margin-bottom: 0px;
+.todo-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
-
-.empty {
-  font-size: 20px;
-  font-weight: 400;
-  color: #cf972e;
-  letter-spacing: 0.2rem;
+.todo-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px
 }
